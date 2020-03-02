@@ -117,7 +117,7 @@ class MyApp(App):
             print('-- o wins')
             self.winner = True
         else:
-            print('-- no winner')
+            print('-- no winnerfdfdsgdfgd')
 
 
 if __name__ == "__main__":
