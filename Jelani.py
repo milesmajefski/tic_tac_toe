@@ -119,45 +119,6 @@ class MyApp(App):
         else:
             print('-- no winner')
 
-        # check the rows
-        row1 = gs[0][0].value + gs[0][1].value + gs[0][2].value
-        row2 = gs[1][0].value + gs[1][1].value + gs[1][2].value
-        row3 = gs[2][0].value + gs[2][1].value + gs[2][2].value
-        # check the columns
-        col1 = gs[0][0].value + gs[1][0].value + gs[2][0].value
-        col2 = gs[0][1].value + gs[1][1].value + gs[2][1].value
-        col3 = gs[0][2].value + gs[1][2].value + gs[2][2].value
-        # check the diagonals
-        diag1 = gs[0][0].value + gs[1][1].value + gs[2][2].value
-        diag2 = gs[0][2].value + gs[1][1].value + gs[2][0].value
-
-        if (
-            row1 == 3
-            or row2 == 3
-            or row3 == 3
-            or col1 == 3
-            or col2 == 3
-            or col3 == 3
-            or diag1 == 3
-            or diag2 == 3
-        ):
-            print("== First User wins")
-            self.winner = True
-        elif (
-            row1 == -3
-            or row2 == -3
-            or row3 == -3
-            or col1 == -3
-            or col2 == -3
-            or col3 == -3
-            or diag1 == -3
-            or diag2 == -3
-        ):
-            print("== Second User wins")
-            self.winner = True
-        else:
-            print("== No winner")
-
 
 if __name__ == "__main__":
     MyApp().run()
