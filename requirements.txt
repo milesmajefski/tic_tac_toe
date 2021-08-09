@@ -19,7 +19,7 @@ pycodestyle==2.5.0
 pyflakes==2.1.1
 Pygments==2.5.2
 pypiwin32==223
-pywin32==227
+pywin32==301
 regex==2020.2.20
 requests==2.22.0
 toml==0.10.0
